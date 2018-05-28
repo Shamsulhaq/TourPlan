@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundfive"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#038112"
+        >
+
+        <ImageView
+            android:paddingLeft="30dp"
+            android:paddingTop="7dp"
+            android:id="@+id/im"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@drawable/addevent" />
+
+        <TextView
+            android:id="@+id/titaleup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Create Event"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:layout_toRightOf="@id/im"
+            android:layout_toEndOf="@id/im"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/destinationET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Enter Your Tour Destination"
+            android:inputType="textPostalAddress" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/startDateET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter or Choose Start Date"
+            android:inputType="datetime"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/endDateET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter or Choose End Date"
+            android:inputType="datetime"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/budgetET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Budget Amount"
+            android:inputType="number"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp">
+        <Button
+            android:id="@+id/cancleBTN"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancle"
+            android:textColor="#fff"
+            android:background="#b63012"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/addBTN"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:background="#08bc1d"
+            android:textAllCaps="false"/>
+
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/backgroundeight"
+    tools:context="com.example.sam.tourplan.EventDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_backgroundfx"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:src="@drawable/tourcatoon"
+            android:scaleType="center"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#ccc" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Event ID:"
+                android:textColor="#05036c"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/eventId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textColor="#05036c"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Destination:"
+                android:textColor="#05036c"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/eventDestinastion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Khulna"
+                android:textColor="#05036c"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Date:"
+                android:textColor="#05036c"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/eventStartDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12-6-17"
+                android:textColor="#05036c"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="End Date:"
+                android:textColor="#05036c"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/eventEndDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12-6-17"
+                android:textColor="#05036c"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#05036c"
+                android:text="Budget Amount:"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/eventBudget"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1200 Tk"
+                android:textColor="#05036c"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/button_background"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:text="Edite Event"
+                android:textSize="16dp"
+                android:onClick="editeEvent"/>
+            <Button
+
+                android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="16dp"
+                android:onClick="deleteEvent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:text="Show Expenses "
+                android:textSize="16dp"
+                android:onClick="showExpenses"/>
+            <Button
+            android:layout_weight="1"
+                android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Show Memory"
+            android:textSize="16dp"
+                android:onClick="showMemory"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Add Expenses "
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:onClick="addExpenses"/>
+            <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+                android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="Add Memory"
+            android:textSize="16dp"
+                android:onClick="addMemory"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
